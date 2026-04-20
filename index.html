@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wish{
+            color:green;
+        }
+        #id234{
+            color:blue;
+        }
+        *{
+            background-color: black;
+        }
+    </style>
+<body>
+    <p>hello sahithi</p>
+    <h1>hello world</h1>
+        <h1 class="wish">hello world</h1>
+    <h1 id="id234">hello world</h1>
+</body>
+</html>
+Set-Content -Path 'd:\day8\index.html' -Value @'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Music Cards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #f1f1f1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        .heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .heading h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #1f1f1f;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 26px 50px rgba(0, 0, 0, 0.45);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        .card-body {
+            padding: 18px;
+        }
+        .card-title {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+        .card-text {
+            margin: 0 0 16px;
+            font-size: 0.98rem;
+            line-height: 1.5;
+            color: #d1d1d1;
+        }
+        audio {
+            width: 100%;
+            outline: none;
+        }
+        .song-label {
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+            display: block;
+        }
+        @media (max-width: 600px) {
+            .heading h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="heading">
+            <h1>Movie Posters with Naa Song Audio</h1>
+            <p>Five movie-inspired cards with Unsplash images and audio players.</p>
+        </header>
+        <section class="cards">
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1542204165-7fbb10458a01?auto=format&fit=crop&w=800&q=80" alt="Movie Night">
+                <div class="card-body">
+                    <h2 class="card-title">Midnight Cinema</h2>
+                    <p class="card-text">A moody movie moment with a dramatic soundtrack from Naa Songs.</p>
+                    <span class="song-label">Naa Song 1: Dreaming Stars</span>
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=800&q=80" alt="Red Carpet">
+                <div class="card-body">
+                    <h2 class="card-title">Red Carpet Premiere</h2>
+                    <p class="card-text">A glamorous scene with music that sets the stage for a blockbuster release.</p>
+                    <span class="song-label">Naa Song 2: Golden Lights</span>
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=800&q=80" alt="Film Reel">
+                <div class="card-body">
+                    <h2 class="card-title">Retro Film Reel</h2>
+                    <p class="card-text">An old-school cinematic feel matched with soulful Naa song audio.</p>
+                    <span class="song-label">Naa Song 3: Retro Groove</span>
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=800&q=80" alt="Cinema Lights">
+                <div class="card-body">
+                    <h2 class="card-title">Cinema Lights</h2>
+                    <p class="card-text">A cinematic atmosphere with a powerful soundtrack for the big screen.</p>
+                    <span class="song-label">Naa Song 4: Night Echoes</span>
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </article>
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1491351680730-2f977410a6a4?auto=format&fit=crop&w=800&q=80" alt="Movie Poster">
+                <div class="card-body">
+                    <h2 class="card-title">Poster Premiere</h2>
+                    <p class="card-text">A vibrant movie poster design paired with an upbeat Naa song.</p>
+                    <span class="song-label">Naa Song 5: Silver Screen</span>
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
+'@ -NoNewline -Encoding UTF8
